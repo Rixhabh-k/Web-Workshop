@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins";
+}
+
+.todo-conatiner{
+    height: 95%;
+    width: 40%;
+    background: #313131;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.greeting{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(153, 153, 153);
+    font-size: 0.8rem;
+}
+
+.header h1{
+    color: white;
+}
+
+.header p{
+    color: rgb(153, 153, 153);
+    font-size: 0.9rem; 
+}
+
+/* 1rem = 16px */
+
+.input-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #8b8b8b;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    background: #8b8b8b;
+    font-size: 1rem;
+}
+
+.input-field input::placeholder{
+    color: black;
+}
+
+.plus{
+    height: 42px;
+    width: 42px;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+.add-btn{
+    border: none;
+    background: #fbfbfb;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.task-container{
+    height: 420px;
+    width: 100%;
+    /* background: #a21313; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    overflow-y: auto;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #525252;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-title input{
+    height: 15px;
+    width: 15px;
+}
+
+.delete-btn{
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    color: red;
+}
